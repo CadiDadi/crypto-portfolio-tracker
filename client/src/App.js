@@ -23,9 +23,13 @@ export default App
 
 
 // TO DO
-    //add Header from crypto-events
+    //add Header / from crypto-events
     //inside switch
         //add an ABOUT component
         //shop page? see folder & files
 // bugs
-    //purchase price entry form box doesnt clear after submit (all others do)
+    //form entry - 
+        //purchase price entry - doesnt clear after submit (all others do)
+        //date - remove up/down inside box
+        //capitalize, except am/pm
+        //amount field - 8digits

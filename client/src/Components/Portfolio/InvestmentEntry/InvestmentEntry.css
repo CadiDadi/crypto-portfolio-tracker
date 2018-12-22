@@ -1,0 +1,13 @@
+.fields-container{
+    margin: 20px;
+    padding: 5px;
+}
+.fields{
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 5px;
+    text-transform: capitalize; 
+}
+
+/* .fields:nth-child(3){ 
+} */

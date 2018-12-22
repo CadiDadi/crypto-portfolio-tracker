@@ -5,6 +5,7 @@ import Form from '../../../shared/Form'
 import AddInvestmentForm from '../AddInvestmentForm/AddInvestmentForm'
 import InvestmentList from '../InvestmentList/InvestmentList'
 import LittleBtcChart from '../LittleCharts/LittleBtcChart'
+import CryptoTop50 from './CryptoTop50'
 // import { toUnicode } from 'punycode';
 
 class Portfolio extends Component {
@@ -29,6 +30,7 @@ class Portfolio extends Component {
                 <InvestmentList currentInvestments={this.props.currentInvestments} tickerGet={this.props.tickerGet}/>
 
                 <LittleBtcChart />
+                <CryptoTop50 />
 
             </div>
         )
