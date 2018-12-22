@@ -1,0 +1,9 @@
+.investment-entry-elements-container{
+    margin: 20px;
+    padding: 5px;
+}
+.investment-entry-elements{
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 5px;
+}

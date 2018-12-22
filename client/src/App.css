@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: lighter;
+  box-sizing: border-box;
+}
