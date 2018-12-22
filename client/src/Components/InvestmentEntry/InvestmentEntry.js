@@ -16,7 +16,7 @@ const InvestmentEntry = props => {
                 <span className='investment-entry-elements'>${USD}</span>
             </p>
         </div>
-    )
+    ) 
 }
 
 export default InvestmentEntry

@@ -13,5 +13,5 @@ const InvestmentList = ({ currentInvestments, tickerGet }) => {
     )
 }
 
-export default InvestmentList
+export default InvestmentList 
 
