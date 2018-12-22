@@ -8,7 +8,7 @@ class InvestmentProvider extends Component {
         super()
         this.state = {
             currentInvestments: [],
-            tickerGet: []
+            cryptoPriceGet: []
         }
     }
 
@@ -17,7 +17,7 @@ class InvestmentProvider extends Component {
             console.log(response)
             this.setState({
                 currentInvestments: response.data.investments,
-                tickerGet: response.data.tickerGet
+                cryptoPriceGet: response.data.cryptoPriceGet
             })
         })
         .catch(err => console.log(err.response.data.errMsg))
@@ -36,7 +36,7 @@ class InvestmentProvider extends Component {
             <InvestmentContext.Provider
                 value={{
                     currentInvestments: this.state.currentInvestments,
-                    tickerGet: this.state.tickerGet,
+                    cryptoPriceGet: this.state.cryptoPriceGet,
                     getInvestments: this.getInvestments,
                     addInvestment: this.addInvestment
                 }}>

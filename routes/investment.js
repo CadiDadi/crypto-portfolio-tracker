@@ -12,11 +12,11 @@ investmentRouter.get('/', (req, res, next) => {
             return next(err)
         }
         
-        const tickers = Array.from(new Set(investments.map(investment => investment.symbol))).join(',')
+        const cryptoPrices = Array.from(new Set(investments.map(investment => investment.symbol))).join(',')
         
-        const tickerGet = await axios.get(`https://min-api.cryptocompare.com/data/pricemulti?fsyms=${tickers}&tsyms=USD&api_key=85902babd490353363f521ff093d32bdc35fed2f3d9c30d77158e7bb3eff335e`)
+        const cryptoPriceGet = await axios.get(`https://min-api.cryptocompare.com/data/pricemulti?fsyms=${cryptoPrices}&tsyms=USD&api_key=85902babd490353363f521ff093d32bdc35fed2f3d9c30d77158e7bb3eff335e`)
        
-        return res.status(200).send({investments, tickerGet: tickerGet.data})
+        return res.status(200).send({investments, cryptoPriceGet: cryptoPriceGet.data})
     })
 })
 

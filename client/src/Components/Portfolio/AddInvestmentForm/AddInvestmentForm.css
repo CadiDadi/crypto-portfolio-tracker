@@ -1,6 +1,6 @@
 form{
     background-color: blueviolet;
-    color: red;
+    color: blue;
     margin: 20px;
     padding: 10px;
     font-size: 33px;
@@ -17,11 +17,12 @@ button{
     align-items: center; 
 }
 input{
-    border: 3px solid rgb(206, 30, 133);
+    border: 3px solid blue;
     height: 30px;
     width: 150px;
     align-content: center;
     align-items: center;
     padding: 5px;
     margin: 3px;
+    color: rgba(0, 0, 0, 0.932);
 }
