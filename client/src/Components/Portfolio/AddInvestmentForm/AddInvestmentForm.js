@@ -2,13 +2,13 @@ import React from 'react'
 import './AddInvestmentForm.css'
 
 const AddInvestmentForm = props => {
-    const { handleChange, handleSubmit, inputs: { name, symbol, amountPurchased, purchasePrice } } = props
+    const { handleChange, handleSubmit, inputs: { purchaseDate, name, symbol, amountPurchased, purchasePrice } } = props
     return(
         <form className='investment-form' onSubmit={handleSubmit}> 
             <input type="date" 
-                   id="datePurchased" 
-                   name="datePurchased"
-                   value="xxxx-xx-xx"
+                   id="purchaseDate" 
+                   name="purchaseDate"
+                   value={purchaseDate}
                    min="2009-01-01" max="2099-12-31"
             />
             <input type='text' 
@@ -42,7 +42,3 @@ const AddInvestmentForm = props => {
 
 export default AddInvestmentForm
 
-// todo
-    // date purchased
-    // where purchased
-    // etc

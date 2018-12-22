@@ -10,6 +10,7 @@
     box-sizing: border-box;
     box-shadow: aqua;
     color: red; 
+    
 }
 .div1:nth-child(2){
     border: 3px solid black;

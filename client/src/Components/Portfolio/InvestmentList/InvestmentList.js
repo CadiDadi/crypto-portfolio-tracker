@@ -1,5 +1,5 @@
 import React from 'react'
-import InvestmentEntry from '../../InvestmentEntry/InvestmentEntry'
+import InvestmentEntry from '../InvestmentEntry/InvestmentEntry'
 import './InvestmentList.css'
 
 const InvestmentList = ({ currentInvestments, tickerGet }) => {

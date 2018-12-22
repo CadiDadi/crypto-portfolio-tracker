@@ -1,10 +1,13 @@
-.investment-entry-elements-container{
+.fields-container{
     margin: 20px;
     padding: 5px;
 }
-.investment-entry-elements{
+.fields{
     border: 2px solid blue;
     margin: 5px;
     padding: 5px;
     text-transform: capitalize; 
 }
+
+/* .fields:nth-child(3){ 
+} */
