@@ -5,7 +5,10 @@ import Form from '../../../shared/Form'
 import AddInvestmentForm from '../AddInvestmentForm/AddInvestmentForm'
 import InvestmentList from '../InvestmentList/InvestmentList'
 import LittleBtcChart from '../LittleCharts/LittleBtcChart'
-import CryptoTop50 from './CryptoTop50'
+import LittleBchChart from '../LittleCharts/LittleBchChart'
+import LittleEthChart from '../LittleCharts/LittleEthChart'
+import LittleLtcChart from '../LittleCharts/LittleLtcChart'
+
 // import { toUnicode } from 'punycode';
 
 class Portfolio extends Component {
@@ -15,9 +18,10 @@ class Portfolio extends Component {
 
     render(){
         console.log(this.props.investments)
-        console.log(this.props.tickerGet)
+        console.log(this.props.cryptoPriceGet)
         return (
             <div>
+
                 <Form className='investments-form'
                     inputs={{ name: '', 
                               symbol: '',
@@ -27,11 +31,13 @@ class Portfolio extends Component {
                     submit={inputs => this.props.addInvestment(inputs)}
                     render={props => <AddInvestmentForm {...props}/>}
                 /> 
-                <InvestmentList currentInvestments={this.props.currentInvestments} tickerGet={this.props.tickerGet}/>
-
-                <LittleBtcChart />
-                <CryptoTop50 />
-
+                <InvestmentList currentInvestments={this.props.currentInvestments} cryptoPriceGet={this.props.cryptoPriceGet}/>
+                <div>
+                    <LittleBtcChart />
+                    <LittleEthChart />
+                    <LittleBchChart />
+                    <LittleLtcChart />
+                </div>
             </div>
         )
     }
@@ -39,6 +45,3 @@ class Portfolio extends Component {
 
 export default withInvestments(Portfolio)
 
-// todo
-    //not listing current investments
-    //css?
