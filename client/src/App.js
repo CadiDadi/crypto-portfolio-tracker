@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import './App.css'
-import Navbar from './Components/Navbar/Navbar'
+// import Navbar from './Components/Navbar/Navbar'
 import Portfolio from './Components/Portfolio/PortfolioPage/Portfolio'
 import ChartPage from './Components/ChartPage/ChartPage'
 import MarketPage from './Components/MarketPage/MarketPage'
@@ -10,7 +10,7 @@ class App extends Component {
   render(){ 
     return (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch>
           <Route exact path='/' render={props => <Portfolio {...props} /> }/>
           <Route path='/charts' render={props => <ChartPage {...props} /> }/>
@@ -31,8 +31,12 @@ export default App
         //add an ABOUT component
         //shop page? see folder & files
 // bugs
-    //form entry - 
-        //purchase price entry - doesnt clear after submit (all others do)
-        //date - remove up/down inside box
-        //capitalize, except am/pm
-        //amount field - 8digits
+    //portfolio page
+        //form entry - 
+            //purchase price entry - doesnt clear after submit (all others do)
+            //date - remove up/down inside box
+            //date - showing current day, not day picked
+            //symbol must be valid or crashes (have to remove the entry from Postman (doesnt even get to MongoDB))
+                //fix - make dropdown selection
+        //entry list 
+            //display for smaller screens

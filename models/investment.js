@@ -2,10 +2,9 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const investmentSchema = new Schema({
-    //need MomentJS for dates?
     purchaseDate: {
         type: Date,
-        default: Date.now,
+        // default: Date.now,
         uppercase: false
     },
     name: {

@@ -1,4 +1,11 @@
 .investments-form{
+    display: flex;
+    flex-wrap: space-evenly;
     background-color: blueviolet;
-    color: red;
+    color: blue;
+}
+.little-charts{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1px;
 }
