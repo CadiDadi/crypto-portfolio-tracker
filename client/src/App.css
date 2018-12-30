@@ -8,3 +8,7 @@
   font-weight: lighter;
   box-sizing: border-box;
 }
+/* date entry options - https://stackoverflow.com/questions/14946091/are-there-any-style-options-for-the-html5-date-picker */
+::-webkit-inner-spin-button{
+    display: none;
+}

@@ -3,8 +3,6 @@
     padding: 0;
     border: none;
     outline: none;
-    /* text-transform: capitalize;     */
-    /* text-decoration: none; */
     font-family: sans-serif;
     font-weight: lighter;
     box-sizing: border-box;
@@ -12,25 +10,35 @@
     color: red; 
     
 }
+.div11{
+    overflow-x: scroll;
+}
 .div1:nth-child(2){
     border: 3px solid black;
     /* margin: 3px; */
+}
+
+.div2 div.entry {
+    height: 25px;
 }
 .div2:nth-child(1){
     border: 3px solid green;
     /* margin: 3px; */
 } 
+.div2 div:nth-child(even){
+    background-color: rgb(209, 206, 206);
+    width: 120vw;
+}
 .heading{
     display: flex;
     flex-wrap: space-evenly;
-    margin: 0 0 -35px 20px;
+    margin: 0 0 5px 20px;
     padding: 5px;
     white-space: nowrap;
     font-size: 13px;
+    /* overflow-x: scroll; */
 }
 .heads{
-    display: flex;
-    flex-wrap: space-evenly;
     border: 2px solid blue;
     margin: 2px;
     padding: 3px;

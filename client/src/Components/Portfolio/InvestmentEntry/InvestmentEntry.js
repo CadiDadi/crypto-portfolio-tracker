@@ -10,26 +10,26 @@ const InvestmentEntry = props => {
     console.log(totalInvested)
 
     return(
-        <div>
             <div className='entry'>
-                <p className='fields-container'> 
-                    <span className='fields'>{moment(purchaseDate).format("MM/DD/YY")}</span>
-                    <span className='fields'>{moment(purchaseDate).format("hh:mma")}</span>
-                    <span className='fields'>{name}</span>
-                    <span className='fields'>{symbol}</span>
-                    <span className='fields'>{amountPurchased.toFixed(8)}</span>
-                    <span className='fields'>${purchasePrice.toFixed(2)}</span>
-                    <span className='fields'>${(purchasePrice * amountPurchased).toFixed(2)}</span>
-                    <span className='fields'>${USD}</span>
-                    <span className='fields'>${(amountPurchased * USD).toFixed(2)}</span>
-                    <span className='fields'>${amountPurchased * (USD - purchasePrice).toFixed(2)}</span>
-                    <span className='fields'>${(((amountPurchased * USD) / (purchasePrice * amountPurchased)) -1).toFixed(2)}</span>
+                <div className='fields-container'> 
+                    <span className='fields user'>{moment(purchaseDate).format("MM/DD/YY")}</span>
+                    <span className='fields user'>{moment(purchaseDate).format("hh:mma")}</span>
+                    <span className='fields user'>{name}</span>
+                    <span className='fields user'>{symbol}</span>
+                    <span className='fields user'>{amountPurchased.toFixed(8)}</span>
+                    <span className='fields user'>${purchasePrice.toFixed(2)}</span>
+                    <div className='fields-container summary'>
+                        <span className='fields'>${(purchasePrice * amountPurchased).toFixed(2)}</span>
+                        <span className='fields'>${USD.toFixed(2)}</span>
+                        <span className='fields'>${(amountPurchased * USD).toFixed(2)}</span>
+                        <span className='fields'>${(amountPurchased * (USD - purchasePrice)).toFixed(2)}</span>
+                        <span className='fields'>{(((amountPurchased * USD) / (purchasePrice * amountPurchased)) -1).toFixed(2)}%</span>
+                    </div>
                     <span className='fields'>${(purchasePrice * 1.025).toFixed(2)}</span>
                     <span className='fields'>${(purchasePrice * 1.05).toFixed(2)}</span>
                     <span className='fields'>${(purchasePrice * 1.075).toFixed(2)}</span>
-                </p>
+                </div>
             </div>
-        </div>
     ) 
 }
 

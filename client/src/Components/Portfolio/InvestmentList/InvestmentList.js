@@ -5,19 +5,19 @@ import './InvestmentList.css'
 const InvestmentList = ({ currentInvestments, cryptoPriceGet }) => {
     console.log(currentInvestments)
     return(
-        <div className='div1'>
+        <div className='div11'>
             <div className='heading'> 
-                <span className='heads'>Date</span>
-                <span className='heads'>Time</span>
-                <span className='heads'>Name</span>
-                <span className='heads'>Symbol</span>
-                <span className='heads'>Amount Purchased</span>
-                <span className='heads'>Purchase Price</span>
-                <span className='heads'>Total Invested</span>
-                <span className='heads'>Current Price</span>
-                <span className='heads'>Current Value</span>
-                <span className='heads'>Current ROI $</span>
-                <span className='heads'>Current ROI %</span>
+                <span className='heads user'>Date</span>
+                <span className='heads user'>Time</span>
+                <span className='heads user'>Name</span>
+                <span className='heads user'>Symbol</span>
+                <span className='heads user'>Amount Purchased</span>
+                <span className='heads user'>Purchase Price</span>
+                    <span className='heads summary'>Total Invested</span>
+                    <span className='heads summary'>Current Price</span>
+                    <span className='heads summary'>Current Value</span>
+                    <span className='heads summary'>Current ROI $</span>
+                    <span className='heads summary'>Current ROI %</span>
                 <span className='heads'>Target 2.5%</span>
                 <span className='heads'>Target 5%</span>
                 <span className='heads'>Target 7.5%</span>

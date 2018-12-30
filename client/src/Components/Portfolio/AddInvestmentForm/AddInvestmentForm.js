@@ -1,5 +1,5 @@
 import React from 'react'
-import './AddInvestmentForm.css'
+import './AddInvestmentForm.css' 
 
 const AddInvestmentForm = props => {
     const { handleChange, handleSubmit, inputs: { purchaseDate, name, symbol, amountPurchased, purchasePrice } } = props
@@ -9,6 +9,7 @@ const AddInvestmentForm = props => {
                    id="purchaseDate" 
                    name="purchaseDate"
                    value={purchaseDate}
+                   onChange={handleChange}
                    min="2009-01-01" max="2099-12-31"
             />
             <input type='text' 

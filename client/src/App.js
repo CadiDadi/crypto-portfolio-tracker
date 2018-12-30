@@ -33,10 +33,8 @@ export default App
 // bugs
     //portfolio page
         //form entry - 
-            //purchase price entry - doesnt clear after submit (all others do)
-            //date - remove up/down inside box
-            //date - showing current day, not day picked
             //symbol must be valid or crashes (have to remove the entry from Postman (doesnt even get to MongoDB))
-                //fix - make dropdown selection
+                //make dropdown selection
         //entry list 
             //display for smaller screens
+            //current roi - 2 decimal places

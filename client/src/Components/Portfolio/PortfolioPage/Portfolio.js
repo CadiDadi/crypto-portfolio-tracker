@@ -22,7 +22,7 @@ class Portfolio extends Component {
         console.log(this.props.cryptoPriceGet)
         return (
             <div>
-                <Table />
+                {/* <Table /> */}
                 <div className='little-charts'>
                     <LittleBtcChart />
                     <LittleEthChart />
@@ -34,7 +34,8 @@ class Portfolio extends Component {
                             name: '', 
                             symbol: '',
                             amountPurchased: '', 
-                            purchasedPrice: '' 
+                            purchasedPrice: '',
+                            purchaseDate: '' 
                     }}
                     submit={inputs => this.props.addInvestment(inputs)}
                     render={props => <AddInvestmentForm {...props} />}
