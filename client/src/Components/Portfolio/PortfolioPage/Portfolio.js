@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import { withInvestments } from '../../../context/InvestmentProvider'
 import './portfolio.css'
 import Form from '../../../shared/Form'
-import AddInvestmentForm from '../AddInvestmentForm/AddInvestmentForm'
-
-import InvestmentList from '../InvestmentList/InvestmentList'
+import Table from '../Table/Table'
 import LittleBtcChart from '../LittleCharts/LittleBtcChart'
 import LittleBchChart from '../LittleCharts/LittleBchChart'
 import LittleEthChart from '../LittleCharts/LittleEthChart'
 import LittleLtcChart from '../LittleCharts/LittleLtcChart'
+import AddInvestmentForm from '../AddInvestmentForm/AddInvestmentForm'
+import InvestmentList from '../InvestmentList/InvestmentList'
 
 // import { toUnicode } from 'punycode' //what is this???
 
@@ -22,6 +22,7 @@ class Portfolio extends Component {
         console.log(this.props.cryptoPriceGet)
         return (
             <div>
+                <Table />
                 <div className='little-charts'>
                     <LittleBtcChart />
                     <LittleEthChart />

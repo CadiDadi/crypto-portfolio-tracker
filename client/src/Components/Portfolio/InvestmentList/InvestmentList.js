@@ -15,6 +15,12 @@ const InvestmentList = ({ currentInvestments, cryptoPriceGet }) => {
                 <span className='heads'>Purchase Price</span>
                 <span className='heads'>Total Invested</span>
                 <span className='heads'>Current Price</span>
+                <span className='heads'>Current Value</span>
+                <span className='heads'>Current ROI $</span>
+                <span className='heads'>Current ROI %</span>
+                <span className='heads'>Target 2.5%</span>
+                <span className='heads'>Target 5%</span>
+                <span className='heads'>Target 7.5%</span>
             </div>
             <div className='div2'>
                 { currentInvestments.map(investment => <InvestmentEntry {...investment} curPrice={cryptoPriceGet[investment.symbol]} key={investment._id} />) } 
