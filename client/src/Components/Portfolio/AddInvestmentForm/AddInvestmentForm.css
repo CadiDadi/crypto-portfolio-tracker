@@ -1,13 +1,13 @@
-form{
+.investment-form{
     display: flex;
+    flex-wrap: space-evenly;
     align-items: center;
     background-color: rgb(163, 158, 158);
     color: blue;
     margin: 25px;
     padding: 10px;
     font-size: 12px;
-    width: 900px;
-    
+    width: 1050px;  
 }
 button{
     color: white;
@@ -29,4 +29,15 @@ input{
     padding: 5px;
     margin: 3px;
     color: rgba(0, 0, 0, 0.932);
+}
+.entry1{
+    display: flex;
+    flex-wrap: space-evenly;
+    align-items: center;
+    background-color: rgb(163, 158, 158);
+    color: blue;
+    margin: 0 15px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+
 }

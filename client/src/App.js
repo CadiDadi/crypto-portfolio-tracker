@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
+
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css'; 
+import 'mdbreact/dist/css/mdb.css';
+
 import './App.css'
-// import Navbar from './Components/Navbar/Navbar'
+import NavbarElement from './Components/Navbar/Navbar'
 import Portfolio from './Components/Portfolio/PortfolioPage/Portfolio'
 import ChartPage from './Components/ChartPage/ChartPage'
 import MarketPage from './Components/MarketPage/MarketPage'
@@ -10,7 +15,7 @@ class App extends Component {
   render(){ 
     return (
       <div>
-        {/* <Navbar /> */}
+        <NavbarElement />
         <Switch>
           <Route exact path='/' render={props => <Portfolio {...props} /> }/>
           <Route path='/charts' render={props => <ChartPage {...props} /> }/>
@@ -36,5 +41,4 @@ export default App
             //symbol must be valid or crashes (have to remove the entry from Postman (doesnt even get to MongoDB))
                 //make dropdown selection
         //entry list 
-            //display for smaller screens
-            //current roi - 2 decimal places
+            //big screen - Summary class expands too far
