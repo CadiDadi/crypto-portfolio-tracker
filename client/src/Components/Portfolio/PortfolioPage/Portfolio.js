@@ -2,44 +2,43 @@ import React, { Component } from 'react'
 import { withInvestments } from '../../../context/InvestmentProvider'
 import './portfolio.css'
 import Form from '../../../shared/Form'
-// import Table from '../Table/Table'
 import LittleBtcChart from '../LittleCharts/LittleBtcChart'
 import LittleBchChart from '../LittleCharts/LittleBchChart'
 import LittleEthChart from '../LittleCharts/LittleEthChart'
 import LittleLtcChart from '../LittleCharts/LittleLtcChart'
 import AddInvestmentForm from '../AddInvestmentForm/AddInvestmentForm'
-import InvestmentList from '../InvestmentList/InvestmentList'
-
-// import { toUnicode } from 'punycode' //what is this???
+import InvestmentList from '../InvestmentList/InvestmentList' 
 
 class Portfolio extends Component {
     componentDidMount(){
         this.props.getInvestments()
     }
-
     render(){
-        console.log(this.props.investments)
-        console.log(this.props.cryptoPriceGet)
+        // console.log(this.props.investments)
+        // console.log(this.props.cryptoPriceGet)
         return (
             <div>
-                {/* <Table /> */}
-                <div className='little-charts'>
-                    <LittleBtcChart />
-                    <LittleEthChart />
-                    <LittleBchChart />
-                    <LittleLtcChart />
+                <div className='little-charts-container'>
+                    <div className='little-charts'>
+                        <LittleBtcChart />
+                        <LittleEthChart />
+                        <LittleBchChart />
+                        <LittleLtcChart />
+                    </div>
                 </div>
-                <Form className='investments-form'
-                    inputs={{ 
-                            name: '', 
-                            symbol: '',
-                            amountPurchased: '', 
-                            purchasedPrice: '',
-                            purchaseDate: '' 
-                    }}
-                    submit={inputs => this.props.addInvestment(inputs)}
-                    render={props => <AddInvestmentForm {...props} />}
-                /> 
+                <div className='user-input'>
+                    <Form className='investments-form'
+                        inputs={{ 
+                                name: '', 
+                                symbol: '',
+                                amountPurchased: '', 
+                                purchasedPrice: '',
+                                purchaseDate: '' 
+                        }}
+                        submit={inputs => this.props.addInvestment(inputs)}
+                        render={props => <AddInvestmentForm {...props} />}
+                    /> 
+                </div>
                 <InvestmentList 
                     currentInvestments={this.props.currentInvestments} 
                     cryptoPriceGet={this.props.cryptoPriceGet} />

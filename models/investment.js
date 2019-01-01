@@ -9,7 +9,8 @@ const investmentSchema = new Schema({
     },
     name: {
         type: String,
-        required: true,
+        enum: ['Bitcoin', 'Ethereum'],
+        required: true
     },
     //alternately, auto-fill symbol / vice-versa enter symbol, auto-fill name
     symbol: {

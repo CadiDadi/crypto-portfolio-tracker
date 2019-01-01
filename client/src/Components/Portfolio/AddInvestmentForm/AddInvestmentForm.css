@@ -1,6 +1,6 @@
 .investment-form{
     display: flex;
-    flex-wrap: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     background-color: rgb(163, 158, 158);
     color: blue;
@@ -23,16 +23,15 @@ button{
 input{
     border: 2px solid blue;
     height: 30px;
-    width: 150px;
+    width: 160px;
     align-content: center;
     align-items: center;
     padding: 5px;
     margin: 3px;
+    margin-left: 6px;
     color: rgba(0, 0, 0, 0.932);
 }
 .entry1{
-    display: flex;
-    flex-wrap: space-evenly;
     align-items: center;
     background-color: rgb(163, 158, 158);
     color: blue;

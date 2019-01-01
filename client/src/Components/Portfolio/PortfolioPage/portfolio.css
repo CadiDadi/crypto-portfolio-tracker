@@ -1,11 +1,25 @@
-.investments-form{
-    display: flex;
-    flex-wrap: space-evenly;
-    background-color: blueviolet;
-    color: blue;
+.little-charts-container{
+    padding: 20px;
 }
 .little-charts{
     display: flex;
+    /* flex-wrap: space-between; */
+    justify-content: center;
+    margin: 10px 0 0 -10px;
+}
+.user-input{
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 1px;
 }
+.investments-form{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: center;
+    color: blue;
+}
+/* Form{
+    align-items: center;
+} */

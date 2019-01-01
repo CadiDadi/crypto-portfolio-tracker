@@ -1,8 +1,8 @@
 import React from 'react'
-import './AddInvestmentForm.css' 
+import './AddInvestmentForm.css'  
 
 const AddInvestmentForm = props => {
-       const { handleChange, handleSubmit, inputs: { purchaseDate, name, symbol, amountPurchased, purchasePrice } } = props
+       const { handleChange, handleSubmit, inputs: { purchaseDate, name, symbol, amountPurchased, purchasePrice } } = props 
        return(
               <form className='investment-form' onSubmit={handleSubmit}> 
                      <span className='entry1'>Entry:</span>

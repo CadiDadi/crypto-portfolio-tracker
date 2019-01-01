@@ -1,7 +1,7 @@
 const express = require('express')
 const investmentRouter = express.Router()
 const Investment = require('../models/investment')
-const axios = require('axios')
+const axios = require('axios') 
 
 //get all
 investmentRouter.get('/', (req, res, next) => {
@@ -15,7 +15,7 @@ investmentRouter.get('/', (req, res, next) => {
         const cryptoPrices = Array.from(new Set(investments.map(investment => investment.symbol))).join(',')
         
         const cryptoPriceGet = await axios.get(`https://min-api.cryptocompare.com/data/pricemulti?fsyms=${cryptoPrices}&tsyms=USD&api_key=85902babd490353363f521ff093d32bdc35fed2f3d9c30d77158e7bb3eff335e`)
-       
+
         return res.status(200).send({investments, cryptoPriceGet: cryptoPriceGet.data})
     })
 })

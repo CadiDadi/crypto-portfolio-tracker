@@ -1,8 +1,11 @@
-.entry {
+
+
+/* ////////from old stuff - reuse or delete////// */
+
+/* .entry {
     height: 25px;
     margin-left: 30px;
 }
-
 .fields-container{
     display: flex;
     flex-wrap: space-evenly;
@@ -34,23 +37,23 @@
     width: 100px;
     min-width: 100px;
    padding:0 10px;
-}
-/* .fields:nth-child(7){
+} 
+.fields:nth-child(7){
     padding: 0 0 0 -25px;
-} */
-/* .fields:nth-child(5){
+}
+.fields:nth-child(5){
     width: 105px;
     min-width: 105px;
-} */
+}
 .summary{
     background-color: rgb(145, 141, 141);
-    /* width: 100px; */
+    width: 100px;
     height: 30px;
 }
 .fields:last-child{
     width: 100px;
     min-width: 100px;
 }
-/* .summary:last-child{
+.summary:last-child{
     width: 10px;
 } */
