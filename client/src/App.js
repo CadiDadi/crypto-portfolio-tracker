@@ -32,11 +32,8 @@ export default App
 
 //**** GITHUB - update ISSUES & PROJECT ****//
 
-// TO DO
-        // footer
 // bugs
         //1 form entry - 
             //symbol must be valid or crashes (have to remove the entry from Postman (doesnt even get to MongoDB))
                 //make dropdown selection - IN MODEL, ENUM NOT WORKING
-        //2 table replication per entry
         //3 investment table - overlaps sticky header

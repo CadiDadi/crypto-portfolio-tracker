@@ -11,7 +11,7 @@ import InvestmentList from '../InvestmentList/InvestmentList'
 
 class Portfolio extends Component {
     componentDidMount(){
-        this.props.getInvestments()
+        this.props.getInvestments() 
     }
     render(){
         // console.log(this.props.investments)

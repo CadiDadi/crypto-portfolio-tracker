@@ -9,12 +9,13 @@ const investmentSchema = new Schema({
     },
     name: {
         type: String,
-        enum: ['Bitcoin', 'Ethereum'],
+        enum: ['Bitcoin', 'Ethereum', 'Bitcoin Cash', 'L:itecoin'],
         required: true
     },
     //alternately, auto-fill symbol / vice-versa enter symbol, auto-fill name
     symbol: {
         type: String,
+        enum: ['BTC', 'ETH', 'BCH', 'LTC'],
         uppercase: true
     },
     amountPurchased: {

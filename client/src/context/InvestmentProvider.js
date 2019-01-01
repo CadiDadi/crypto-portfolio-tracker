@@ -31,6 +31,24 @@ class InvestmentProvider extends Component {
         })
         .catch(err => console.log(err.response.data.errMsg))
     }
+
+    handleDeleteRouter = (id) => {
+        console.log(id)
+        axios.delete(`/portfolio/${id}`).then(res =>
+            this.setState({
+                currentInvestments: this.state.currentInvestments.filter(each => each._id !== id)
+            })
+        )
+    }
+
+    handleEditRouter = (id) => {
+        axios.put(`/portfolio/${id}`).then(res => 
+            this.setState({
+                currentInvestments: this.state.currentInvestments.map(each => each._id)
+            })
+        )
+    }
+
     render(){
         return(
             <InvestmentContext.Provider
@@ -38,7 +56,9 @@ class InvestmentProvider extends Component {
                     currentInvestments: this.state.currentInvestments,
                     cryptoPriceGet: this.state.cryptoPriceGet,
                     getInvestments: this.getInvestments,
-                    addInvestment: this.addInvestment
+                    addInvestment: this.addInvestment,
+                    handleDeleteRouter: this.handleDeleteRouter,
+                    handleEditRouter: this.handleEditRouter
                 }}>
                 { this.props.children }
             </InvestmentContext.Provider>

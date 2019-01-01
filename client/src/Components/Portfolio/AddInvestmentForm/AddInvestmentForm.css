@@ -3,11 +3,19 @@
     flex-wrap: wrap;
     align-items: center;
     background-color: rgb(163, 158, 158);
+    border-radius: 5px;
     color: blue;
     margin: 25px;
     padding: 10px;
     font-size: 12px;
-    width: 1050px;  
+    width: 910px;  
+}
+.selectors{
+    height: 30px;
+    width: 90px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin: 0 5px;
 }
 button{
     color: white;
@@ -19,9 +27,11 @@ button{
     margin: 5px;
     align-content: center;
     align-items: center; 
+    border-radius: 5px;
 }
 input{
     border: 2px solid blue;
+    border-radius: 5px;
     height: 30px;
     width: 160px;
     align-content: center;

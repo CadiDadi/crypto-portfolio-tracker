@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 import logoNoBack from '../../img/logoNoBack.png'
-
+import Axios from "axios";
 
 class Nav extends Component {
     constructor(props){
@@ -19,7 +19,7 @@ class Nav extends Component {
         window.removeEventListener("scroll", this.handleScroll)
     }
     handleScroll = () =>{
-        // note scroll 'Y' (as in x & y axis??)
+        // 'Y' & 'z' axis, cannot separate from scroll and Index
         if(window.scrollY >= 10){
             this.setState({
                 fixed: "fixed",
@@ -35,12 +35,13 @@ class Nav extends Component {
     render() {
         return (
             <div className="nav" style={{position: this.state.fixed, background: this.state.background, zIndex: 0}}>
-                <h1><Link to="/" style={{ textDecoration: "none", color: "white" }}><img className='logoNoBack' src={logoNoBack} alt="Logo" /></Link></h1>
+                <h1><Link to="/" style={{ color: "white" }}><img className='logoNoBack' src={logoNoBack} alt="Logo" /></Link></h1>
                 <ul className="nav-menus">
-                    <li><Link to="/" style={{ textDecoration: "none", color: "white" }}>Portfolio</Link></li>
-                    <li><Link to="/charts" style={{ textDecoration: "none", color: "white" }}>Analysis</Link></li>
-                    <li><Link to="/about" style={{ textDecoration: "none", color: "white" }}>About</Link></li>
-                    <li><Link to="/schedule" style={{ textDecoration: "none", color: "white" }}>User</Link></li>
+                    <li><Link to="/" style={{ color: "white" }}>Portfolio</Link></li>
+                    <li><Link to="/charts" style={{ color: "white" }}>Charts</Link></li>
+                    <li><Link to="/market" style={{ color: "white" }}>Market</Link></li>
+                    {/* <li><Link to="/about" style={{ color: "white" }}>About</Link></li>
+                    <li><Link to="/schedule" style={{ color: "white" }}>User</Link></li> */}
                 </ul>
             </div>
         )

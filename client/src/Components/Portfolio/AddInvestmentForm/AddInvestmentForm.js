@@ -1,5 +1,6 @@
 import React from 'react'
 import './AddInvestmentForm.css'  
+// import formData from './formData.json'
 
 const AddInvestmentForm = props => {
        const { handleChange, handleSubmit, inputs: { purchaseDate, name, symbol, amountPurchased, purchasePrice } } = props 
@@ -13,18 +14,37 @@ const AddInvestmentForm = props => {
                             onChange={handleChange}
                             min="2009-01-01" max="2099-12-31"
                      />
-                     <input type='text' 
+                     <select className='selectors' 
+                             onChange={handleChange} 
+                             name='name'
+                             placeholder='Name' >
+                                   <option value="Select Coin">Select Coin</option>
+                                   <option value="Bitcoin">Bitcoin</option>
+                                   <option value="Ethereum">Ethereum</option>
+                                   <option value="Bitcoin Cash">Bitcoin Cash</option>
+                                   <option value="Litecoin">Litecoin</option>
+                     </select>
+                     {/* <input type='text' 
                             name='name'
                             value={name}
                             onChange={handleChange} 
                             placeholder='Name'
-                     />   
-                     <input type='text' 
+                     />    */}
+                     <select className='selectors' 
+                             onChange={handleChange} 
+                             name='symbol' >
+                                   <option value="Symbol">Symbol</option>
+                                   <option value="BTC">BTC</option>
+                                   <option value="ETH">ETH</option>
+                                   <option value="BCH">BCH</option>
+                                   <option value="LTC">LTC</option>
+                     </select>
+                     {/* <input type='text' 
                             name='symbol'
                             value={symbol}
                             onChange={handleChange} 
                             placeholder='Symbol'
-                     />   
+                     />    */}
                      <input type='number' 
                             name='amountPurchased'
                             value={amountPurchased}

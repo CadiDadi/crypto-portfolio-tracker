@@ -3,7 +3,7 @@
 }
 .little-charts{
     display: flex;
-    /* flex-wrap: space-between; */
+    flex-wrap: wrap;
     justify-content: center;
     margin: 10px 0 0 -10px;
 }
