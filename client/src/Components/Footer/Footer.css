@@ -6,8 +6,8 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 200px; 
-    position:absolute;
-    bottom:0;
+    /* position:absolute;
+    bottom:0; */
     width: 100%;
 }
 .footer-theme {
