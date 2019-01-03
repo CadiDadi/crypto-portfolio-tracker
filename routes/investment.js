@@ -5,7 +5,6 @@ const axios = require('axios')
 
 //get all
 investmentRouter.get('/', (req, res, next) => {
-    console.log('hit here')
     Investment.find(async (err, investments) => {
         if(err) {
             res.status(500)

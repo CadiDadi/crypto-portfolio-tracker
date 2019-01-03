@@ -30,11 +30,3 @@ class App extends Component {
 }
 
 export default App
-
-//**** GITHUB - update ISSUES & PROJECT ****//
-
-// bugs
-        //1 form - 
-            //must refresh page inbetween submitting entries
-            //purchase price (& other?) not clearing entry from last entry
-        //2 date is listing one day behind what entered AND need TIME

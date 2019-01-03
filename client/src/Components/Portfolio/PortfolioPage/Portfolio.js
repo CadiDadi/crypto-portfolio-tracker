@@ -48,4 +48,3 @@ class Portfolio extends Component {
 }
 
 export default withInvestments(Portfolio)
-

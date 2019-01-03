@@ -1,6 +1,6 @@
-import React from "react";
-import moment from "moment";
-import "./InvestmentEntry.css";
+import React from "react"
+import moment from "moment"
+import "./InvestmentEntry.css"
 import { withInvestments } from "../../../context/InvestmentProvider"
 
 class InvestmentEntry extends React.Component {
@@ -17,7 +17,7 @@ class InvestmentEntry extends React.Component {
   }
 
   render() {
-    // curPrice: USD - from live API
+    // curPrice: USD - from API
     const {
         purchaseDate,
         name,
@@ -32,8 +32,7 @@ class InvestmentEntry extends React.Component {
         <div className="fields-container">
             {/* <span className='edit-button-container'>
                 <button className='edit-button' onClick={() => this.handleDelete(this.props._id)}>
-                Edit
-                </button>
+                Edit</button>
             </span> */}
             <span className='delete-button-container'>
                 <button className='delete-button' onClick={() => this.handleDelete(this.props._id)}>
@@ -51,39 +50,21 @@ class InvestmentEntry extends React.Component {
           <span className="fields amount">{amountPurchased.toFixed(8)}</span>
           <span className="fields user purchase-price">${purchasePrice.toFixed(2)}</span>
           <div className="fields-container summary">
-            <span className="fields total-invested">
-              ${(purchasePrice * amountPurchased).toFixed(2)}
-            </span>
+            <span className="fields total-invested">${(purchasePrice * amountPurchased).toFixed(2)}</span>
             <span className="fields summary current-price">${USD.toFixed(2)}</span>
-            <span className="fields summary">
-              ${(amountPurchased * USD).toFixed(2)}
-            </span>
-            <span className="fields summary">
-              ${(amountPurchased * (USD - purchasePrice)).toFixed(2)}
-            </span>
-            <span className="fields summary">
-              {(
-                (amountPurchased * USD) / (purchasePrice * amountPurchased) -
-                1
-              ).toFixed(2)}
-              %
-            </span>
+            <span className="fields summary">${(amountPurchased * USD).toFixed(2)}</span>
+            <span className="fields summary">${(amountPurchased * (USD - purchasePrice)).toFixed(2)}</span>
+            <span className="fields summary">{((amountPurchased * USD) / (purchasePrice * amountPurchased) - 1).toFixed(2)} %</span>
           </div>
-          <span className="fields target1">
-            ${(purchasePrice * 1.025).toFixed(2)}
-          </span>
-          <span className="fields target2">
-            ${(purchasePrice * 1.05).toFixed(2)}
-          </span>
-          <span className="fields target3">
-            ${(purchasePrice * 1.075).toFixed(2)}
-          </span>
+          <span className="fields target1">${(USD * 1.025).toFixed(2)}</span>
+          <span className="fields target2">  ${(USD * 1.05).toFixed(2)}</span>
+          <span className="fields target3">${(USD * 1.075).toFixed(2)}</span>
         </div>
      </div>
-    );
+    )
   }
 }
 
-export default withInvestments(InvestmentEntry);
+export default withInvestments(InvestmentEntry)
 
 // https://momentjs.com/docs/

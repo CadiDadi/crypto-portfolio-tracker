@@ -27,7 +27,6 @@ const investmentSchema = new Schema({
         type: Number,
         required: true
     }
-    //need any more??
 })
 
 module.exports = mongoose.model('Investment', investmentSchema )

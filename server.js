@@ -15,7 +15,7 @@ app.use('/portfolio', require('./routes/investment'))
 //db connect
 //setting db name - crypto1
 mongoose.connect('mongodb://localhost:27017/crypto1', {useNewUrlParser: true}, () => {
-    console.log('hey, you are connected to the db')
+    console.log('hey, you are connected to the db - crypto1/investments')
 })
 
 //global error handler
@@ -25,11 +25,5 @@ app.use((err, req, res, next) => {
 
 //server
 app.listen(PORT, () => {
-    console.log(`hey, server is running on ${PORT}`)
+    console.log(`hey, server is running on port ${PORT}`)
 })
-
-
-
-
-
-
