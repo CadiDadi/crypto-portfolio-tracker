@@ -5,22 +5,50 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 200px; 
-    /* position:absolute;
-    bottom:0; */
+    height: 220px; 
+    /* position:absolute; */
+    bottom:0;
     width: 100%;
 }
-.footer-theme {
-    height: 100%;
+.feet{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    /* vertical-align: center; */
+    margin: 10px 0 0 0;
 }
-.whiteLongFooter {
-    margin-top: 40px;
+.button-container{
+    margin: 30px 10px;
 }
-
+.footer-buttons{
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: center;
+    height: 60px;
+    width: 260px;
+    background-color: white;
+    color: blue;
+    white-space: nowrap;
+    font-size: 26px;
+    border-radius: 5px;
+    padding: 10px;
+    /* margin: -20px 0px -20px 0px; */
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px 5px 10px 5px;
+} 
+.visit{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 5px -20px 5px;
+}               
+.legal{
+    display: flex;
+    flex: space-between;
+    justify-content: center;
+}
 
 /* @media only screen and (max-width: 675px) and (max-device-width: 1024px) 
 and (-webkit-min-device-pixel-ratio: 1) {
@@ -28,12 +56,20 @@ and (-webkit-min-device-pixel-ratio: 1) {
         height: 900px;
     }
 } */
-@media only screen and (max-width: 674px) {
-    .whiteLong {
-        visibility: hidden;
+/* @media (min-width: 800px) {
+    .footer{
+        height: 220px;
+        padding: 0 5px;
+        width: 100%;
     }
-    .whiteLong1 {
-        visibility: hidden;
-    }
-    
-}
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -30px 5px 5px 5px;
+    } 
+    .visit{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 5px -40px 5px;
+    }               
+} */

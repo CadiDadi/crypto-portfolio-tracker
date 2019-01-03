@@ -1,15 +1,30 @@
+.investments-table{
+  display: flex;
+  justify-content: center;
+  padding-left: -20px;
+}
 .headers-container {
   overflow-x: scroll;
   border: 3px solid blue;
   margin: 30px;
-  padding: 20px;
+  padding: 20px 0px 0 -10px;
   border-radius: 5px;
+  max-width: 1500px;
+}
+.sell-targets {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  color: blue;
+  font-size: 20px;
+  margin-left: 1140px;
+  margin-right: -20px;
+  white-space: nowrap; 
 }
 .headers-container:nth-child(2) {
   border: 3px solid black;
   margin: 3px;
 }
-/* .div2 div:nth-child(even){
+/* .entries-container div:nth-child(even){
     background-color: rgb(209, 206, 206);
     width: 130vw;
 } */
@@ -34,44 +49,49 @@
   color: blue;
   /* border-radius: 5px; */
 }
-.heads:nth-child(1) {
+.date {
   width: 60px;
   min-width: 60px;
-  margin: 0 0 0 115px;
+  margin: 0 0 0 118px;
 }
-.heads:nth-child(2) {
-  width: 65px;
-  min-width: 65px;
+.name {
+  width: 80px;
+  min-width: 80px;
 }
-.heads:nth-child(3) {
-  width: 90px;
-  min-width: 90px;
+.symbol {
+  width: 55px;
+  min-width:55px;
   text-transform: capitalize;
 }
-.heads:nth-child(4) {
-  width: 70px;
-  min-width: 70px;
+.amt-pur{
+  width: 125px;
+  min-width: 125px;
 }
-.heads:nth-child(5) {
-  width: 120px;
-  min-width: 120px;
+.pur-pri {
+  width: 100px;
+  min-width: 100px;
 }
 .heads:nth-child(6) {
   width: 100px;
   min-width: 100px;
 }
 .heads:nth-child(7) {
-  width: 90px;
-  min-width: 90px;
+  width: 96px;
+  min-width: 96px;
+  font-weight: bold;
 }
-.heads:nth-child(8) {
+.summary1 {
+  background-color: rgb(185, 180, 180);
+}
+.cur-pri {
   width: 90px;
   min-width: 90px;
+  background-color: rgba(0, 0, 255, 0.7);
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 .heads:nth-child(9) {
   width: 90px;
   min-width: 90px;
-}
-.summary1 {
-  background-color: rgb(145, 141, 141);
 }

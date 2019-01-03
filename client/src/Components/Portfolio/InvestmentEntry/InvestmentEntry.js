@@ -30,11 +30,11 @@ class InvestmentEntry extends React.Component {
     return (
       <div className="entry">
         <div className="fields-container">
-            <span className='edit-button-container'>
+            {/* <span className='edit-button-container'>
                 <button className='edit-button' onClick={() => this.handleDelete(this.props._id)}>
                 Edit
                 </button>
-            </span>
+            </span> */}
             <span className='delete-button-container'>
                 <button className='delete-button' onClick={() => this.handleDelete(this.props._id)}>
                 Delete
@@ -43,18 +43,18 @@ class InvestmentEntry extends React.Component {
           <span className="fields user">
             {moment(purchaseDate).format("MM/DD/YY")}
           </span>
-          <span className="fields user">
+          {/* <span className="fields user">
             {moment(purchaseDate).format("hh:mma")}
-          </span>
+          </span> */}
           <span className="fields user">{name}</span>
-          <span className="fields user">{symbol}</span>
-          <span className="fields user">{amountPurchased.toFixed(8)}</span>
-          <span className="fields user">${purchasePrice.toFixed(2)}</span>
+          <span className="fields symbol">{symbol}</span>
+          <span className="fields amount">{amountPurchased.toFixed(8)}</span>
+          <span className="fields user purchase-price">${purchasePrice.toFixed(2)}</span>
           <div className="fields-container summary">
-            <span className="fields summary">
+            <span className="fields total-invested">
               ${(purchasePrice * amountPurchased).toFixed(2)}
             </span>
-            <span className="fields summary">${USD.toFixed(2)}</span>
+            <span className="fields summary current-price">${USD.toFixed(2)}</span>
             <span className="fields summary">
               ${(amountPurchased * USD).toFixed(2)}
             </span>

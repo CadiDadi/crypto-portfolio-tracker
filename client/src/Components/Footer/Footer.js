@@ -1,18 +1,31 @@
 import React from "react";
 // import Nav from "./Nav"
-import "./Footer.css"
-import whiteLong from '../../img/whiteLong.png'
+import "./Footer.css";
+// import whiteLong from '../../img/whiteLong.png'
 
 const Footer = () => {
-    return(
-        <div className = "footer">
-            {/* <Nav /> */}
-            <div className ="footer-theme">
-                <div className='whiteLongFooter'>
-                    <img className='whiteLong1' src={whiteLong} alt="Logo" />
-                </div>
+  return (
+    <div className="footer">
+      <div className="footer-container">
+        <div className="feet">
+          <div className="button-container">
+            <div>
+              <a className="footer-buttons contact" href="mailto: Info@C-3.co">
+                Contact Us
+              </a>
             </div>
+            <div>
+              <a className="footer-buttons visit" href="http://www.C-3.co">
+                Visit Parent Website
+              </a>
+            </div>
+          </div>
         </div>
-    )
-}
-export default Footer
+      </div>
+      <div className="legal">Crypto Currency Concepts (C-3)</div>
+      <div className="legal">Copyright 2019 ©</div>
+    </div>
+  );
+};
+
+export default Footer;

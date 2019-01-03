@@ -3,7 +3,7 @@ import React from 'react'
 const LittleBtcChart = () => { 
     return ( 
         <div>
-            <div style={{   width: '250px', 
+            <div style={{   width: '250px',  
                             height: '220px', 
                             backgroundColor: '#FFFFFF', 
                             overflow: 'hidden', 
@@ -28,7 +28,7 @@ const LittleBtcChart = () => {
                             marginHeight={0} 
                             frameBorder={0} 
                             border={0} 
-                            style={{border: 0, margin: 0, padding: 0, lineHeight: '14px', boxSizing: 'content-box'}} />
+                    />
                 </div>
                 <div style={{color: '#FFFFFF', 
                             lineHeight: '14px', 
@@ -39,7 +39,8 @@ const LittleBtcChart = () => {
                             fontFamily: 'Verdana, Tahoma, Arial, sans-serif'}}>
                     <a href="https://coinlib.io" 
                             target="_blank" 
-                            style={{fontWeight: 500, color: '#FFFFFF', fontSize: '11px', textDecoration: 'none'}}>Coinlib</a>
+                            style={{fontWeight: 500, color: '#FFFFFF', fontSize: '11px', textDecoration: 'none'}}>Coinlib
+                    </a>
                 </div>
             </div>
         </div>

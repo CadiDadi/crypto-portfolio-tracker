@@ -1,6 +1,5 @@
 import React from 'react'
 import './AddInvestmentForm.css'  
-// import formData from './formData.json'
 
 const AddInvestmentForm = props => {
        const { handleChange, handleSubmit, inputs: { purchaseDate, name, symbol, amountPurchased, purchasePrice } } = props 
@@ -16,20 +15,13 @@ const AddInvestmentForm = props => {
                      />
                      <select className='selectors' 
                              onChange={handleChange} 
-                             name='name'
-                             placeholder='Name' >
+                             name='name' >
                                    <option value="Select Coin">Select Coin</option>
                                    <option value="Bitcoin">Bitcoin</option>
                                    <option value="Ethereum">Ethereum</option>
                                    <option value="Bitcoin Cash">Bitcoin Cash</option>
                                    <option value="Litecoin">Litecoin</option>
                      </select>
-                     {/* <input type='text' 
-                            name='name'
-                            value={name}
-                            onChange={handleChange} 
-                            placeholder='Name'
-                     />    */}
                      <select className='selectors' 
                              onChange={handleChange} 
                              name='symbol' >
@@ -39,12 +31,6 @@ const AddInvestmentForm = props => {
                                    <option value="BCH">BCH</option>
                                    <option value="LTC">LTC</option>
                      </select>
-                     {/* <input type='text' 
-                            name='symbol'
-                            value={symbol}
-                            onChange={handleChange} 
-                            placeholder='Symbol'
-                     />    */}
                      <input type='number' 
                             name='amountPurchased'
                             value={amountPurchased}
@@ -57,7 +43,7 @@ const AddInvestmentForm = props => {
                             onChange={handleChange} 
                             placeholder='Purchase Price'
                      />
-                     <button>Submit</button>
+                     <button className='submit'>Submit</button>
               </form>
        )
 }

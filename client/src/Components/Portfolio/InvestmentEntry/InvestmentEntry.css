@@ -2,16 +2,14 @@
     /* height: 20px; */
     margin-left: 30px;
     width: auto;
-
 }
-.entry:nth-child(even){
-    background-color: rgb(209, 206, 206);
-    width: 1350px;
-}
+/* .entry:nth-child(even){
+    te
+    width: 1350px; 
+} */
 button{
-    font-size: 14px;
-    height: 28px;
-    width: 80px;
+    font-size: 13px;
+    height: 20px;    
 }
 .delete-button-container{
     width: 110px;
@@ -22,6 +20,9 @@ button{
     min-width: 70px;
     background-color: red;
     border-radius: 5px;
+    padding: 0 0 5px 0;
+    margin: 0 0 3px 10px;
+
 }
 .fields-container{
     display: flex;
@@ -54,60 +55,100 @@ button{
     min-width: 70px;
 }
 .user:nth-child(3){
-    width: 80px;
-    min-width: 80px;
+    width: 100px;
+    min-width: 100px;
     text-transform: capitalize;
 }
 .fields:nth-child(4){
-    width: 100px;
-    min-width: 100px;
+    width: 110px;
+    min-width: 110px;
+    text-align: center;
 }
-.fields:nth-child(5){
+.amount{
     width: 80px;
     min-width: 80px;
+    text-align: center; 
+    margin-left: -40px; 
 }
-.fields:nth-child(6){
+.purchase-price{
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
     width: 130px;
     min-width: 130px;
 }
 .fields:nth-child(7){
-    width: 98px;
-    min-width: 98px;
-}
-.summary{
-    background-color: rgb(145, 141, 141);
-}
-.summary:nth-child(1){
-    width: 103px;
-    min-width: 103px;
-}
-.summary:nth-child(2){
+    display: flex;
+    justify-content: center;
     width: 100px;
     min-width: 100px;
 }
+.summary{
+    /* background-color: rgb(145, 141, 141); */
+}
+.total-invested{
+    display: flex;
+    justify-content: center;
+    width: 107px;
+    min-width: 107px;
+    font-weight: bold;
+}
+.current-price{
+    width: 96px;
+    min-width: 96px;
+    background-color: rgba(0, 0, 255, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0 2px;
+}
 .summary:nth-child(3){
-    width: 103px;
-    min-width: 103px;
+    display: flex;
+    justify-content: center;
+    padding-right: 12px;
+    width: 93px;
+    min-width: 93px;
+    margin: 0 1px;
+    background-color: rgb(185, 180, 180);
 }
 .summary:nth-child(4){
-    width: 105px;
-    min-width: 105px;
+    display: flex;
+    justify-content: center;
+    padding-right: 5px;
+    width: 90px;
+    min-width: 90px;
+    margin: 0 3px;
+    background-color: rgb(185, 180, 180);
 }
 .summary:nth-child(5){
-    width: 85px;
-    min-width: 85px;
+    display: flex;
+    justify-content: center;
+    padding-right: 1px;
+    width: 95px;
+    min-width: 95px;
+    margin: 0 1px;
+    background-color: rgb(185, 180, 180);
 }
 .target1{
+    display: flex;
+    justify-content: center;
+    padding-right: 18px;
     width: 88px;
     min-width: 88px;
     margin-left: 3px;
 }
 .target2{
+    display: flex;
+    justify-content: center;
+    padding-right: 18px;
     width: 80px;
     min-width: 80px;
     /* margin-left: 3px; */
 }
 .target3{
+    display: flex;
+    justify-content: center;
+    padding-right: 24px;
     width: 90px;
     min-width: 90px;
     /* margin-left: 3px; */

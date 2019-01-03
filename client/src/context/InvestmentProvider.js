@@ -29,7 +29,7 @@ class InvestmentProvider extends Component {
                 currentInvestments: [...prevState.currentInvestments, response.data]
             }))
         })
-        .catch(err => console.log(err.response.data.errMsg))
+        .catch(err => console.log(err))
     }
 
     handleDeleteRouter = (id) => {
@@ -41,13 +41,13 @@ class InvestmentProvider extends Component {
         )
     }
 
-    handleEditRouter = (id) => {
-        axios.put(`/portfolio/${id}`).then(res => 
-            this.setState({
-                currentInvestments: this.state.currentInvestments.map(each => each._id)
-            })
-        )
-    }
+    // handleEditRouter = (id) => {
+    //     axios.put(`/portfolio/${id}`).then(res => 
+    //         this.setState({
+    //             currentInvestments: this.state.currentInvestments.map(each => each._id)
+    //         })
+    //     )
+    // }
 
     render(){
         return(

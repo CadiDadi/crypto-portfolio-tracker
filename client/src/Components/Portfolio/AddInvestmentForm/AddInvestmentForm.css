@@ -5,7 +5,7 @@
     background-color: rgb(163, 158, 158);
     border-radius: 5px;
     color: blue;
-    margin: 25px;
+    margin: 15px;
     padding: 10px;
     font-size: 12px;
     width: 910px;  
@@ -17,13 +17,13 @@
     border-radius: 5px;
     margin: 0 5px;
 }
-button{
+.submit{
     color: white;
     background-color: blue;
     width: 80px;
     height: 35px;
     font-size: 20px;
-    padding: 5px;
+    padding: 0 0 4px 0;
     margin: 5px;
     align-content: center;
     align-items: center; 
@@ -46,7 +46,7 @@ input{
     background-color: rgb(163, 158, 158);
     color: blue;
     margin: 0 15px 0 0;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 
 }
