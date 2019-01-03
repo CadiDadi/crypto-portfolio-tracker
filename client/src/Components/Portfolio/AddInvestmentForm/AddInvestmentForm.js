@@ -19,14 +19,14 @@ const AddInvestmentForm = props => {
         min="2009-01-01"
         max="2099-12-31"
       />
-      <select className="selectors" onChange={handleChange} name="name">
+      <select className="selectors" value={name} onChange={handleChange} name="name">
         <option value="Select Coin">Select Coin</option>
         <option value="Bitcoin">Bitcoin</option>
         <option value="Ethereum">Ethereum</option>
         <option value="Bitcoin Cash">Bitcoin Cash</option>
         <option value="Litecoin">Litecoin</option>
       </select>
-      <select className="selectors" onChange={handleChange} name="symbol">
+      <select className="selectors"  value={symbol} onChange={handleChange} name="symbol">
         <option value="Symbol">Symbol</option>
         <option value="BTC">BTC</option>
         <option value="ETH">ETH</option>

@@ -32,7 +32,7 @@ class Portfolio extends Component {
                                 name: '', 
                                 symbol: '',
                                 amountPurchased: '', 
-                                purchasedPrice: '',
+                                purchasePrice: '',
                                 purchaseDate: '' 
                         }}
                         submit={inputs => this.props.addInvestment(inputs)}

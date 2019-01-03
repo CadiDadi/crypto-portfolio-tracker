@@ -5,14 +5,15 @@ const investmentSchema = new Schema({
     purchaseDate: {
         type: Date,
         // default: Date.now,
-        uppercase: false
+        uppercase: false,
+        require: true
     },
     name: {
         type: String,
         enum: ['Bitcoin', 'Ethereum', 'Bitcoin Cash', 'Litecoin'],
         required: true
     },
-    //alternately, auto-fill symbol / vice-versa enter symbol, auto-fill name
+    //alternately, auto-fill symbol / vice-versa enter symbol, auto-fill name - use JSON file?
     symbol: {
         type: String,
         enum: ['BTC', 'ETH', 'BCH', 'LTC'],

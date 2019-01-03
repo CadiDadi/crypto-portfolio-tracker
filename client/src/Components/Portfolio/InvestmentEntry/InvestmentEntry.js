@@ -24,7 +24,7 @@ class InvestmentEntry extends React.Component {
         symbol,
         amountPurchased,
         purchasePrice,
-        curPrice: { USD }
+        curPrice: { USD }  
     } = this.props;
 
     return (

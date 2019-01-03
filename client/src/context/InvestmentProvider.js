@@ -17,13 +17,14 @@ class InvestmentProvider extends Component {
             console.log(response)
             this.setState({
                 currentInvestments: response.data.investments,
-                cryptoPriceGet: response.data.cryptoPriceGet
+                cryptoPriceGet: response.data.cryptoPriceGet 
             })
         })
         .catch(err => console.log(err.response.data.errMsg))
     }
 
     addInvestment = newInvestment => {
+        console.log(newInvestment)
         axios.post('/portfolio', newInvestment).then(response => {
             this.setState(prevState => ({
                 currentInvestments: [...prevState.currentInvestments, response.data]

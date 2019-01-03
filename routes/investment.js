@@ -8,7 +8,7 @@ investmentRouter.get('/', (req, res, next) => {
     Investment.find(async (err, investments) => {
         if(err) {
             res.status(500)
-            return next(err)
+            return next(err) 
         }
         
         const cryptoPrices = Array.from(new Set(investments.map(investment => investment.symbol))).join(',')
