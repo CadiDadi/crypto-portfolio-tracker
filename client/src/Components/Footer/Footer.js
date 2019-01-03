@@ -1,7 +1,5 @@
 import React from "react";
-// import Nav from "./Nav"
 import "./Footer.css";
-// import whiteLong from '../../img/whiteLong.png'
 
 const Footer = () => {
   return (
@@ -26,6 +24,6 @@ const Footer = () => {
       <div className="legal">Copyright 2019 ©</div>
     </div>
   );
-};
+}; 
 
 export default Footer;

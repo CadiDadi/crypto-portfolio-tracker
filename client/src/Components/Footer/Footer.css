@@ -5,7 +5,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 220px; 
+    height: 140px; 
     /* position:absolute; */
     bottom:0;
     width: 100%;
@@ -19,10 +19,11 @@
 }
 .button-container{
     margin: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .footer-buttons{
-    /* display: flex;
-    flex-wrap: wrap; */
     justify-content: center;
     height: 60px;
     width: 260px;
@@ -32,17 +33,17 @@
     font-size: 26px;
     border-radius: 5px;
     padding: 10px;
-    /* margin: -20px 0px -20px 0px; */
+    margin: -20px 10px;
 }
 .contact{
     display: flex;
     flex-wrap: wrap;
-    margin: -15px 5px 10px 5px;
+    /* margin: -15px 5px 10px 5px; */
 } 
 .visit{
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 5px -20px 5px;
+    /* margin: -15px 5px -20px 5px; */
 }               
 .legal{
     display: flex;
@@ -56,20 +57,51 @@ and (-webkit-min-device-pixel-ratio: 1) {
         height: 900px;
     }
 } */
-/* @media (min-width: 800px) {
-    .footer{
-        height: 220px;
-        padding: 0 5px;
-        width: 100%;
+@media (max-width: 600px) {
+    .footer-buttons{
+        display: flex;
+        flex-wrap: wrap;    
+        justify-content: center;
+        height: 60px;
+        width: 260px;
+        background-color: white;
+        color: blue;
+        white-space: nowrap;
+        font-size: 26px;
+        border-radius: 5px;
+        padding: 10px;
+        /* margin: -15px 10px -15px 0; */
     }
     .contact{
-        display: flex;
-        flex-wrap: wrap;
-        margin: -30px 5px 5px 5px;
-    } 
+        margin: -15px 5px -15px 0;
+    }
     .visit{
+        margin: -15px 5px -15px 0;
+    }
+}
+
+@media (max-width: 570px) {
+    .footer{
+        height: 200px;
+    }
+    .footer-buttons{
         display: flex;
-        flex-wrap: wrap;
-        margin: 0px 5px -40px 5px;
-    }               
-} */
+        flex-wrap: wrap;    
+        justify-content: center;
+        height: 60px;
+        width: 260px;
+        background-color: white;
+        color: blue;
+        white-space: nowrap;
+        font-size: 26px;
+        border-radius: 5px;
+        padding: 10px;
+        /* margin: -15px 10px -15px 0; */
+    }
+    .contact{
+        margin: -20px 3px 3px 10px;
+    }
+    .visit{
+        margin: 3px 3px -23px 10px;
+    }
+}

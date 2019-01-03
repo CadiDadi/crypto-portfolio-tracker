@@ -5,9 +5,12 @@ import "./InvestmentList.css";
 const InvestmentList = ({ currentInvestments, cryptoPriceGet }) => {
   console.log(currentInvestments);
   return (
+    
     <div className='investments-table'>
       <div className="headers-container">
+      <div className='title-row'>
         <div className="sell-targets">Sell Targets</div>
+        </div>
         <div className="heading">
           <span className="heads date">Date</span>
           {/* <span className="heads user">Time</span> */}

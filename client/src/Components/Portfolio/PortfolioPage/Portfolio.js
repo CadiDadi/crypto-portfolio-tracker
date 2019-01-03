@@ -9,7 +9,7 @@ import LittleLtcChart from '../LittleCharts/LittleLtcChart'
 import AddInvestmentForm from '../AddInvestmentForm/AddInvestmentForm'
 import InvestmentList from '../InvestmentList/InvestmentList' 
 
-class Portfolio extends Component {
+class Portfolio extends Component { 
     componentDidMount(){
         this.props.getInvestments() 
     }
