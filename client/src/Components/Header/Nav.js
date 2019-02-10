@@ -13,26 +13,26 @@ class Nav extends Component {
             background: "" 
         }
     }
-    componentDidMount(){
-        window.addEventListener('scroll', this.handleScroll)
-    }
-    componentWillUnmount(){
-        window.removeEventListener("scroll", this.handleScroll)
-    }
-    handleScroll = () =>{
-        // 'Y' & 'z' axis, cannot separate from scroll and Index
-        if(window.scrollY >= 10){
-            this.setState({
-                fixed: "fixed",
-                background: "rgba(0,50,150,0.6)"
-            })
-        } else {
-            this.setState({
-                fixed: "",
-                background: "" 
-            })
-        }
-    }
+    // componentDidMount(){
+    //     window.addEventListener('scroll', this.handleScroll)
+    // }
+    // componentWillUnmount(){
+    //     window.removeEventListener("scroll", this.handleScroll)
+    // }
+    // handleScroll = () =>{
+    //     // 'Y' & 'z' axis, cannot separate from scroll and Index
+    //     if(window.scrollY >= 10){
+    //         this.setState({
+    //             fixed: "fixed",
+    //             background: "rgba(0,50,150,0.6)"
+    //         })
+    //     } else {
+    //         this.setState({
+    //             fixed: "",
+    //             background: "" 
+    //         })
+    //     }
+    // }
     render() {
         return (
             <div className="nav" style={{position: this.state.fixed, background: this.state.background, zIndex: 0}}>
