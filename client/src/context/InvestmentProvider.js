@@ -74,5 +74,3 @@ export const withInvestments = C => props => (
         {value => <C {...props} {...value} />}
     </InvestmentContext.Consumer>
 )
-
-
