@@ -5,7 +5,7 @@ const AddInvestmentForm = props => {
   const {
     handleChange,
     handleSubmit,
-    inputs: { purchaseDate, name, symbol, amountPurchased, purchasePrice }
+    inputs: { purchaseDate, name, symbol, amountPurchased, purchasePrice, fee }
   } = props;
   return (
     <form className="investment-form" onSubmit={handleSubmit}>
@@ -47,6 +47,13 @@ const AddInvestmentForm = props => {
         value={purchasePrice}
         onChange={handleChange}
         placeholder="Purchase Price"
+      />
+      <input
+        type="number"
+        name="transFee"
+        value={fee}
+        onChange={handleChange}
+        placeholder="Transaction Fee"
       />
       <button className="submit">Submit</button>
     </form>
