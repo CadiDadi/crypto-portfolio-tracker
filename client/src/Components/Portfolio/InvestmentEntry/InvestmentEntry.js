@@ -49,8 +49,18 @@ class InvestmentEntry extends React.Component {
           <span className="fields symbol">{symbol}</span>
           <span className="fields amount">{amountPurchased.toFixed(8)}</span>
           <span className="fields user purchase-price">${purchasePrice.toFixed(2)}</span>
+
+
+
+          {/* Fees */}
+          <span className="fields user fees">${purchasePrice.toFixed(2)}</span>
+
+
+          
           <div className="fields-container summary">
+            {/* Total Invested */}
             <span className="fields total-invested">${(purchasePrice * amountPurchased).toFixed(2)}</span>
+            {/* Current Coin Price */}
             <span className="fields summary current-price">${USD.toFixed(2)}</span>
             {/* Current Value */}
             <span className="fields summary">${(amountPurchased * USD).toFixed(2)}</span>

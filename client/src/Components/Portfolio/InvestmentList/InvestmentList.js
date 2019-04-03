@@ -18,6 +18,7 @@ const InvestmentList = ({ currentInvestments, cryptoPriceGet }) => {
           <span className="heads symbol">Symbol</span>
           <span className="heads amt-pur">Amount Purchased</span>
           <span className="heads pur-pri">Purchase Price</span>
+          <span className="heads fee">Transaction Fee</span>
           <span className="heads total-invested">Total Invested</span>
           <span className="heads summary1 cur-pri">Current Price</span>
           <span className="heads summary1">Current Value</span>
