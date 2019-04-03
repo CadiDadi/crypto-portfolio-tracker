@@ -50,6 +50,7 @@ const AddInvestmentForm = props => {
       />
       <input
         type="number"
+        step="0.01"
         name="transFee"
         value={fee}
         onChange={handleChange}
@@ -58,6 +59,6 @@ const AddInvestmentForm = props => {
       <button className="submit">Submit</button>
     </form>
   );
-};
+}; 
 
 export default AddInvestmentForm;
