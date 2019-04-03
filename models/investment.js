@@ -27,6 +27,10 @@ const investmentSchema = new Schema({
     purchasePrice: {
         type: Number,
         required: true
+    },
+    fee: {
+        type: Number,
+        required: false
     }
 })
 

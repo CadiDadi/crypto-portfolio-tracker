@@ -73,7 +73,7 @@ button{
 .purchase-price{
     display: flex;
     justify-content: center;
-    padding-left: 25px;
+    padding-left: 28px;
     width: 130px;
     min-width: 130px;
 }

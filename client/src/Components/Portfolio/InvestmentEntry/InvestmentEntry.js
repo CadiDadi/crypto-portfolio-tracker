@@ -24,12 +24,14 @@ class InvestmentEntry extends React.Component {
         symbol,
         amountPurchased,
         purchasePrice,
+        fee,
         curPrice: { USD }  
     } = this.props;
 
     return (
       <div className="entry">
         <div className="fields-container">
+            {/* edit transaction button - have to build functionality */}
             {/* <span className='edit-button-container'>
                 <button className='edit-button' onClick={() => this.handleDelete(this.props._id)}>
                 Edit</button>
@@ -53,10 +55,10 @@ class InvestmentEntry extends React.Component {
 
 
           {/* Fees */}
-          <span className="fields user fees">${purchasePrice.toFixed(2)}</span>
+          <span className="fields user fees">${fee.toFixed(2)}</span>
 
 
-          
+
           <div className="fields-container summary">
             {/* Total Invested */}
             <span className="fields total-invested">${(purchasePrice * amountPurchased).toFixed(2)}</span>
