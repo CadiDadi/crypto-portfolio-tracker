@@ -7,7 +7,6 @@
     background-repeat: no-repeat;
     height: 300px; 
 }
-
 .header-theme {
     height: 100%;
     display: flex;
@@ -15,11 +14,9 @@
     align-items: center;
     flex-direction: column;
 }
-
 .whiteLong {
     margin-top: -280px;
 }
-
 
 /* @media only screen and (max-width: 675px) and (max-device-width: 1024px) 
 and (-webkit-min-device-pixel-ratio: 1) {

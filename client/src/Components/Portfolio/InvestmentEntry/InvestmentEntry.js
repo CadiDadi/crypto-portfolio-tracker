@@ -52,8 +52,11 @@ class InvestmentEntry extends React.Component {
           <div className="fields-container summary">
             <span className="fields total-invested">${(purchasePrice * amountPurchased).toFixed(2)}</span>
             <span className="fields summary current-price">${USD.toFixed(2)}</span>
+            {/* Current Value */}
             <span className="fields summary">${(amountPurchased * USD).toFixed(2)}</span>
+            {/* Current ROI $ */}
             <span className="fields summary">${(amountPurchased * (USD - purchasePrice)).toFixed(2)}</span>
+            {/* Current ROI % */}
             <span className="fields summary">{((amountPurchased * USD) / (purchasePrice * amountPurchased) - 1).toFixed(2)} %</span>
           </div>
           <span className="fields target1">${(USD * 1.025).toFixed(2)}</span>
