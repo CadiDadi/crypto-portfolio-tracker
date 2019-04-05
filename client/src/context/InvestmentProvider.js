@@ -26,6 +26,7 @@ class InvestmentProvider extends Component {
     addInvestment = newInvestment => {
         console.log(newInvestment)
         axios.post('/portfolio', newInvestment).then(response => {
+            console.log(response)
             this.setState(prevState => ({
                 currentInvestments: [...prevState.currentInvestments, response.data]
             }))

@@ -51,7 +51,7 @@ const AddInvestmentForm = props => {
       <input
         type="number"
         step="0.01"
-        name="transFee"
+        name="fee"
         value={fee}
         onChange={handleChange}
         placeholder="Transaction Fee"

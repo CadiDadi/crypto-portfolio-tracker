@@ -27,7 +27,7 @@ class InvestmentEntry extends React.Component {
         fee,
         curPrice: { USD }  
     } = this.props;
-
+ 
     return (
       <div className="entry">
         <div className="fields-container">
@@ -52,7 +52,7 @@ class InvestmentEntry extends React.Component {
           <span className="fields amount">{amountPurchased.toFixed(8)}</span>
           <span className="fields user purchase-price">${purchasePrice.toFixed(2)}</span>
           {/* Fees */}
-          <span className="fields user fees">${fee.toFixed(2)}</span>
+          {/* <span className="fields user fees">${fee.toFixed(2)}</span> */}
           <div className="fields-container summary">
             {/* Total Invested */}
             <span className="fields total-invested">${(purchasePrice * amountPurchased - fee).toFixed(2)}</span>

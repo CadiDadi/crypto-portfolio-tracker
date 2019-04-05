@@ -6,7 +6,7 @@ const investmentSchema = new Schema({
         type: Date,
         // default: Date.now,
         uppercase: false,
-        require: true
+        required: true
     },
     name: {
         type: String,

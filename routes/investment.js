@@ -33,6 +33,7 @@ investmentRouter.get('/:id', (req, res, next) => {
 //post one
 investmentRouter.post('/', (req, res, next) => {
     const newInvestment = new Investment(req.body)
+    console.log(newInvestment)
     newInvestment.save((err, investment) => {
         if(err) {
             res.status(500)
