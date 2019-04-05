@@ -48,14 +48,14 @@ const AddInvestmentForm = props => {
         onChange={handleChange}
         placeholder="Purchase Price"
       />
-      <input
+      {/* <input
         type="number"
         step="0.01"
         name="fee"
         value={fee}
         onChange={handleChange}
         placeholder="Transaction Fee"
-      />
+      /> */}
       <button className="submit">Submit</button>
     </form>
   );
