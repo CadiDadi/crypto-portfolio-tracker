@@ -17,7 +17,6 @@ class InvestmentEntry extends React.Component {
   }
 
   render() {
-    // curPrice: USD - from API
     const {
         purchaseDate,
         name,
@@ -31,11 +30,6 @@ class InvestmentEntry extends React.Component {
     return (
       <div className="entry">
         <div className="fields-container">
-            {/* edit transaction button - have to build functionality */}
-            {/* <span className='edit-button-container'>
-                <button className='edit-button' onClick={() => this.handleDelete(this.props._id)}>
-                Edit</button>
-            </span> */}
             <span className='delete-button-container'>
                 <button className='delete-button' onClick={() => this.handleDelete(this.props._id)}>
                 Delete
