@@ -42,7 +42,7 @@ class Nav extends Component {
                     <li><Link to="/" style={{ color: "white" }}>Portfolio</Link></li>
                     <li><Link to="/charts" style={{ color: "white" }}>Charts</Link></li>
                     <li><Link to="/market" style={{ color: "white" }}>Market</Link></li>
-                    <li><Link to="/news" style={{ color: "white" }}>News</Link></li>
+                    {/* <li><Link to="/news" style={{ color: "white" }}>News</Link></li> */}
                     {/* <li><Link to="/about" style={{ color: "white" }}>About</Link></li>
                     <li><Link to="/schedule" style={{ color: "white" }}>User</Link></li> */}
                 </ul>

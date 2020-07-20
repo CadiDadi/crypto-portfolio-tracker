@@ -21,7 +21,7 @@ class App extends Component {
           <Route exact path='/' render={props => <Portfolio {...props}/> }/>
           <Route path='/charts' render={props => <ChartPage {...props}/> }/>
           <Route path='/market' render={props => <MarketPage {...props}/> }/>
-          <Route path='/news'   render={props => <NewsPage {...props}/> }/>
+          {/* <Route path='/news'   render={props => <NewsPage {...props}/> }/> */}
         </Switch>
         <Footer />
       </div>
